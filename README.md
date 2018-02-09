@@ -10,6 +10,8 @@ eSafety Bear is a "safety button", a small and simple program to provide a float
 
 This is a copy of @Gypsythief's BigRedButton app but has had the graphics and text changed to be more KS1 friendly; Big Red Button was inspired by the "Hector's World Safety Button", written by NetSafe (https://www.netsafe.org.nz/) a New Zealand e-safety organisation. Unfortunately, Hector's World was last updated for Windows Vista and no longer runs on Windows 10; hence this replacement.
 
+Thanks to @Gypsythief for the original source which this is based on.
+
 # Hacking
 The software is publish under the MIT licence (see seperate licence file for full details) which essentially says "here you go, have fun". As a result the full source code is available from the website and you are free to do virtually what you will with it. Refer to @Gypsythief's Big Red Button code if prefer that.
 
