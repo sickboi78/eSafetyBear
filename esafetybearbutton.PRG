@@ -1,5 +1,5 @@
 *---------------------------------------------------------------------------*
-* Time : 10:26:11    Date : 02/09/2018
+* Time : 11:42:42    Date : 02/09/2018
 *---------------------------------------------------------------------------*
 * Programming Without Coding Technology (PWCT) 
 * 2006-2017 , Mahmoud Fayed <msfclipper@yahoo.com> 
@@ -182,7 +182,7 @@ BACKCOLOR {240,240,240}
 
 @ 10,70 HYPERLINK Hyper4eSafetyBear;
 VALUE "eSafety Bear" ;
-ADDRESS "https://github.com/gypsythief/BigRedButton";
+ADDRESS "https://github.com/sickboi78/eSafetyBear";
 WIDTH 160 ;
 HEIGHT 36 ;
 AUTOSIZE ;
@@ -194,7 +194,7 @@ FONTCOLOR {240,40,40} ;
 HANDCURSOR 
 
 @ 50 ,36 LABEL CreatedBy ;
-VALUE "A program by Richard Lee-Williams" ;
+VALUE "A program by Richard Lee-Williams (sickboi78)" ;
 WIDTH 227 ;
 HEIGHT 30 ;
 AUTOSIZE ;
@@ -311,7 +311,7 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define New Window  ( winAbout ) , Title : 
 SS_ESASTEP("Circuits\Main\Main\Main","Event: ON INIT : Action centerAboutMessage()",124,124)
 SS_ESASTEP("Circuits\Main\Main\Main","Window Properties",125,132)
 SS_ESASTEP("Circuits\Main\Main\Main","Define HyperLink ( Hyper4eSafetyBear )",133,145)
-SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( CreatedBy ) , Caption : 'A program by Richard Lee-Williams'",146,147)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( CreatedBy ) , Caption : 'A program by Richard Lee-Williams (sickboi78)'",146,147)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",148,154)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( CreatedWith ) , Caption : 'Created with:'",155,156)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",157,163)
