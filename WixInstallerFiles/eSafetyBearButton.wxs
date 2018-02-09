@@ -2,12 +2,12 @@
 
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
 
-    <Product Name='eSafety Bear' Manufacturer='Richard Lee-Williams'
+    <Product Name='eSafety Bear' Manufacturer='sickboi78'
         Id='E792F7FC-1FB2-4472-B9C6-53513C95ED6B' 
         UpgradeCode='C5035250-B644-45F4-A4BD-DE06678FA1C6'
         Language='1033' Codepage='1252' Version='1.0.0'>
 		<Package Id='*' Keywords='Installer' Description="eSafety Bear MSI"
-			Comments='eSafety Bear is a screen cover utility' Manufacturer='Richard Lee-Williams'
+			Comments='eSafety Bear is a screen cover utility' Manufacturer='sickboi78'
 			InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
 		<Media Id='1' Cabinet='eSafetyBearCab.cab' EmbedCab='yes' />
 		<Property Id="ALLUSERS" Value="1" />

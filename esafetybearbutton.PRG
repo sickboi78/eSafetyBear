@@ -1,5 +1,5 @@
 *---------------------------------------------------------------------------*
-* Time : 11:42:42    Date : 02/09/2018
+* Time : 12:15:34    Date : 02/09/2018
 *---------------------------------------------------------------------------*
 * Programming Without Coding Technology (PWCT) 
 * 2006-2017 , Mahmoud Fayed <msfclipper@yahoo.com> 
@@ -97,7 +97,7 @@ BACKCOLOR {240,240,240}
 PICTURE "eSafetyBearButton.png";
 ON CLICK coverScreen()  ;
 WIDTH 70 HEIGHT 70
-@ 25 ,70 IMAGE BRBArrows;
+@ 25 ,70 IMAGE eSafetyBearArrows;
 PICTURE "moveArrows.png";
 STRETCH ;
 WIDTH 20 HEIGHT 20
@@ -113,7 +113,7 @@ DEFINE WINDOW screenCover ;
 AT 0 ,0 ;
 WIDTH DesktopWidth ;
 HEIGHT DesktopHeight ;
-ICON "BRBIcon" ;
+ICON "eSafetyBearIcon" ;
 CHILD ;
 TOPMOST ;
 NOMINIMIZE ;
@@ -122,7 +122,7 @@ NOSIZE ;
 NOCAPTION ;
 BACKCOLOR {0,0,0} 
 
-@ 0 ,0 IMAGE BRBCover;
+@ 0 ,0 IMAGE eSafetyBearCover;
 PICTURE "ScreenCover.jpg";
 STRETCH ;
 WIDTH DesktopWidth HEIGHT DesktopHeight
@@ -194,7 +194,7 @@ FONTCOLOR {240,40,40} ;
 HANDCURSOR 
 
 @ 50 ,36 LABEL CreatedBy ;
-VALUE "A program by Richard Lee-Williams (sickboi78)" ;
+VALUE "A program by sickboi78" ;
 WIDTH 227 ;
 HEIGHT 30 ;
 AUTOSIZE ;
@@ -217,17 +217,6 @@ ADDRESS "http://doublesvsoop.sourceforge.net";
 WIDTH 50 ;
 HEIGHT 30 ;
 AUTOSIZE ;
-FONT "Open Sans" ;
-SIZE 12 ;
-BACKCOLOR {240,240,240} ;
-FONTCOLOR {40,40,120} ;
-HANDCURSOR 
-
-@ 152,114 HYPERLINK HyperInkscape;
-VALUE "Inkscape" ;
-ADDRESS "https://inkscape.org";
-WIDTH 72 ;
-HEIGHT 30 ;
 FONT "Open Sans" ;
 SIZE 12 ;
 BACKCOLOR {240,240,240} ;
@@ -284,7 +273,7 @@ SS_ESASTEP("Circuits\Main\Main\Main","Window Properties",35,45)
 SS_ESASTEP("Circuits\Main\Main\Main","Define New Image ( eSafetyBearButton ) , Image : 'eSafetyBearButton.png'",46,47)
 SS_ESASTEP("Circuits\Main\Main\Main","Event: ON CLICK : Action coverScreen()",48,48)
 SS_ESASTEP("Circuits\Main\Main\Main","Image Properties",49,49)
-SS_ESASTEP("Circuits\Main\Main\Main","Define New Image ( BRBArrows ) , Image : 'moveArrows.png'",50,51)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Image ( eSafetyBearArrows ) , Image : 'moveArrows.png'",50,51)
 SS_ESASTEP("Circuits\Main\Main\Main","Image Properties",52,53)
 SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",54,55)
 SS_ESASTEP("Circuits\Main\Main\Main","Activate window",56,58)
@@ -292,7 +281,7 @@ SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",59,59)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Procedure coverScreen",60,60)
 SS_ESASTEP("Circuits\Main\Main\Main","Define New Window  ( screenCover ) , Title : 'Screen Cover'",61,65)
 SS_ESASTEP("Circuits\Main\Main\Main","Window Properties",66,74)
-SS_ESASTEP("Circuits\Main\Main\Main","Define New Image ( BRBCover ) , Image : 'ScreenCover.jpg'",75,76)
+SS_ESASTEP("Circuits\Main\Main\Main","Define New Image ( eSafetyBearCover ) , Image : 'ScreenCover.jpg'",75,76)
 SS_ESASTEP("Circuits\Main\Main\Main","Image Properties",77,78)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( WellDone ) , Caption : 'Well Done!'",79,80)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",81,86)
@@ -311,21 +300,20 @@ SS_ESASTEP("Circuits\Main\Main\Main","Define New Window  ( winAbout ) , Title : 
 SS_ESASTEP("Circuits\Main\Main\Main","Event: ON INIT : Action centerAboutMessage()",124,124)
 SS_ESASTEP("Circuits\Main\Main\Main","Window Properties",125,132)
 SS_ESASTEP("Circuits\Main\Main\Main","Define HyperLink ( Hyper4eSafetyBear )",133,145)
-SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( CreatedBy ) , Caption : 'A program by Richard Lee-Williams (sickboi78)'",146,147)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( CreatedBy ) , Caption : 'A program by sickboi78'",146,147)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",148,154)
 SS_ESASTEP("Circuits\Main\Main\Main","Define Label ( CreatedWith ) , Caption : 'Created with:'",155,156)
 SS_ESASTEP("Circuits\Main\Main\Main","Label Properties",157,163)
 SS_ESASTEP("Circuits\Main\Main\Main","Define HyperLink ( HyperPWCT )",164,175)
-SS_ESASTEP("Circuits\Main\Main\Main","Define HyperLink ( HyperInkscape )",176,186)
-SS_ESASTEP("Circuits\Main\Main\Main","Define HyperLink ( HyperGimp )",187,198)
-SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",199,200)
-SS_ESASTEP("Circuits\Main\Main\Main","Activate window",201,203)
-SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",204,204)
-SS_ESASTEP("Circuits\Main\Main\Main","Define Procedure centerAboutMessage",205,205)
-SS_ESASTEP("Circuits\Main\Main\Main","winAbout.Center( )",206,206)
-SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",207,207)
-SS_ESASTEP("Circuits\Main\Main\Main","Define Procedure moveActiveWindow",208,208)
-SS_ESASTEP("Circuits\Main\Main\Main","Call Procedure postmessage Parameters GetActiveWindow(), 161, 2, 0",209,209)
-SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",210,210)
+SS_ESASTEP("Circuits\Main\Main\Main","Define HyperLink ( HyperGimp )",176,187)
+SS_ESASTEP("Circuits\Main\Main\Main","End Of Window",188,189)
+SS_ESASTEP("Circuits\Main\Main\Main","Activate window",190,192)
+SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",193,193)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Procedure centerAboutMessage",194,194)
+SS_ESASTEP("Circuits\Main\Main\Main","winAbout.Center( )",195,195)
+SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",196,196)
+SS_ESASTEP("Circuits\Main\Main\Main","Define Procedure moveActiveWindow",197,197)
+SS_ESASTEP("Circuits\Main\Main\Main","Call Procedure postmessage Parameters GetActiveWindow(), 161, 2, 0",198,198)
+SS_ESASTEP("Circuits\Main\Main\Main","End of Procedure",199,199)
 Return
 *-------------------------------------------------------------------*

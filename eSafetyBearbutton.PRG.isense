@@ -9,13 +9,13 @@ Parent: wineSafetyBearButton
 Type: Image
 eSafetyBearButton
 Type: Image
-BRBArrows
+eSafetyBearArrows
 END:
 coverScreen
 Type: Window
 Parent: screenCover
 Type: Image
-BRBCover
+eSafetyBearCover
 Type: Label
 WellDone
 Type: Label
@@ -37,7 +37,7 @@ CreatedWith
 Type: HyperLink
 HyperPWCT
 Type: HyperLink
-HyperInkscape
+HyperPaint.Net
 Type: HyperLink
 HyperGimp
 END:
