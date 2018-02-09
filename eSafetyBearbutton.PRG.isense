@@ -1,0 +1,45 @@
+DesktopWidth
+DesktopHeight
+Type: Window
+Parent: winMain
+END:
+spawneSafetyBearButton
+Type: Window
+Parent: wineSafetyBearButton
+Type: Image
+eSafetyBearButton
+Type: Image
+BRBArrows
+END:
+coverScreen
+Type: Window
+Parent: screenCover
+Type: Image
+BRBCover
+Type: Label
+WellDone
+Type: Label
+Hidden
+Type: Label
+GetTeacher
+Type: Button
+btnClose
+END:
+aboutMessage
+Type: Window
+Parent: winAbout
+Type: HyperLink
+Hyper4eSafetyBear
+Type: Label
+CreatedBy
+Type: Label
+CreatedWith
+Type: HyperLink
+HyperPWCT
+Type: HyperLink
+HyperInkscape
+Type: HyperLink
+HyperGimp
+END:
+centerAboutMessage
+moveActiveWindow

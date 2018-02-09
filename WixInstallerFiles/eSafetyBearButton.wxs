@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='windows-1252'?>
+
+<Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
+
+    <Product Name='eSafety Bear' Manufacturer='Richard Lee-Williams'
+        Id='E792F7FC-1FB2-4472-B9C6-53513C95ED6B' 
+        UpgradeCode='C5035250-B644-45F4-A4BD-DE06678FA1C6'
+        Language='1033' Codepage='1252' Version='1.0.0'>
+		<Package Id='*' Keywords='Installer' Description="eSafety Bear MSI"
+			Comments='eSafety Bear is a screen cover utility' Manufacturer='Richard Lee-Williams'
+			InstallerVersion='100' Languages='1033' Compressed='yes' SummaryCodepage='1252' />
+		<Media Id='1' Cabinet='eSafetyBearCab.cab' EmbedCab='yes' />
+		<Property Id="ALLUSERS" Value="1" />
+		
+		<Directory Id='TARGETDIR' Name='SourceDir'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='INSTALLDIR' Name='eSafety Bear'>
+					<Component Id='MainExecutable' Guid='2BAFCD6F-6090-4A0F-892E-190C0502EA0D'>
+						<File Id='eSafetyBearExe' Name='esafetybearbutton.exe' Source='esafetybearbutton.exe' KeyPath='yes'>
+						<Shortcut Id="startmenuBRB" Directory="ProgramMenuDir" Name="eSafety Bear"
+							WorkingDirectory='INSTALLDIR' Icon="esafetybearIcon.exe" IconIndex="0" Advertise="no" />
+						<Shortcut Id="startupBRB" Directory="StartupFolder" Name="eSafety Bear"
+							WorkingDirectory='INSTALLDIR' Icon="esafetybearIcon.exe" IconIndex="0" Advertise="no" />
+						</File>
+					</Component>
+					<Component Id='esafetybearbuttonPng' Guid='4137958E-AC33-4918-A66F-ADD177D81A27'>
+						<File Id='esafetybearbuttonPng' Name='eSafetyBearButton.png' Source='eSafetyBearButton.png' KeyPath='yes' />
+					</Component>
+					<Component Id='esafetybearbuttonArrows' Guid='7EB475F9-CEEF-4755-A047-230C1A7DB71E'>
+						<File Id='esafetybearbuttonArrows' Name='moveArrows.png' Source='moveArrows.png' KeyPath='yes' />
+					</Component>
+					<Component Id='esafetybearbuttonCover' Guid='32EEEACF-8742-4E83-BF18-50DAB20912BF'>
+						<File Id='esafetybearbuttonCover' Name='ScreenCover.jpg' Source='ScreenCover.jpg' KeyPath='yes' />
+					</Component>
+				</Directory>
+			</Directory>
+			
+			<Directory Id="ProgramMenuFolder" Name="Programs">
+				<Directory Id="ProgramMenuDir" Name="eSafety Bear">
+					<Component Id="ProgramMenuDir" Guid="EE105418-C6C8-472C-A1A3-A7B351155E2C">
+						<RemoveFolder Id='ProgramMenuDir' On='uninstall' />
+						<RegistryValue Root='HKMU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes' />
+					</Component>
+				</Directory>
+				<Directory Id="StartupFolder" Name="eSaftey Bear">
+					<Component Id="StartupFolder" Guid="2509D9B0-8279-4D67-8EFE-BFBDBA19B391">
+						<RemoveFolder Id='StartupFolder' On='uninstall' />
+						<RegistryValue Root='HKMU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes' />
+					</Component>
+				</Directory>
+			</Directory>		
+		</Directory>
+		
+		<Feature Id='Complete' Level='1'>
+			<ComponentRef Id='MainExecutable' />
+			<ComponentRef Id='esafetybearbuttonPng' />
+			<ComponentRef Id='esafetybearbuttonArrows' />
+			<ComponentRef Id='esafetybearbuttonCover' />
+		</Feature>
+		<Icon Id="esafetybearIcon.exe" SourceFile="esafetybearbutton.exe" />
+	</Product>
+</Wix>
