@@ -1,6 +1,8 @@
 # eSafetyBear
 eSafety Bear is a screen cover app based on @Gypsythief's Big Red Button (https://github.com/gypsythief/BigRedButton)
+
 Author: sickboi78
+
 Licence: MIT
 
 # Intro
